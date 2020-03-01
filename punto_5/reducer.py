@@ -24,6 +24,7 @@ for linenum, line in enumerate(data):
                     last_year=aux_arr[0]
 		    last_month=aux_arr[1]
                     last_count=1
+		    count=1
 if(count>last_count):
 	last_count=count
 	curr_month=last_month
