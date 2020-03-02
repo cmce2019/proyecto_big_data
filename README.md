@@ -17,11 +17,14 @@ head -n 800000 price_paid_records.csv | python proyecto_big_data/punto_1/mapper.
 
 Punto 2:
 head -n 700 price_paid_records.csv | python proyecto_big_data/punto_2/mapper.py | sort | python proyecto_big_data/punto_2/reducer.py
+
 Punto 3:
-head -n 700 price_paid_records.csv | python proyecto_big_data/punto_3/mapper.py | sort | python proyecto_big_data/punto_3/reducer.py 
+head -n 700 price_paid_records.csv | python proyecto_big_data/punto_3/mapper.py | sort | python proyecto_big_data/punto_3/reducer.py
+ 
 Punto 4: 
 Esta en 1995 por cuestión de pruebas
 head -n 10000 price_paid_records.csv | python proyecto_big_data/punto_4/mapper.py | sort -V 
+
 Punto 5:
 "Prueba": head -n 100 price_paid_records.csv | python proyecto_big_data/punto_5/mapper.py | sort | python proyecto_big_data/punto_1/reducer.py 
 head -n 100 price_paid_records.csv | python proyecto_big_data/punto_5/mapper.py | sort | python proyecto_big_data/punto_5/reducer.py 
