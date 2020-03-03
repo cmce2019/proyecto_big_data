@@ -45,7 +45,10 @@ head -n 10000 price_paid_records.csv | python proyecto_big_data/punto_4/mapper.p
 # hadoop:
 hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big_data/punto_4/mapper.py,/home/hadoop/proyecto_big_data/punto_4/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /input -output /output_4
 # Punto 5:
-"Prueba": head -n 100 price_paid_records.csv | python proyecto_big_data/punto_5/mapper.py | sort | python proyecto_big_data/punto_1/reducer.py 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)"Prueba":
+
+ head -n 100 price_paid_records.csv | python proyecto_big_data/punto_5/mapper.py | sort | python proyecto_big_data/punto_1/reducer.py 
+
 head -n 100 price_paid_records.csv | python proyecto_big_data/punto_5/mapper.py | sort | python proyecto_big_data/punto_5/reducer.py 
 
 # hadoop:
