@@ -1,5 +1,5 @@
 # Inicializacion:
-
+```diff
 ssh -i "clave.pem" hadoop@ec2-184-72-104-249.compute-1.amazonaws.com
 
 sudo yum update
@@ -19,7 +19,7 @@ git clone https://github.com/cmce2019/proyecto_big_data
 git config --global user.email "carlosm.cordoba1@correo.usa.edu.co"
 
 git config --global user.name "cmce2019"
-
+```
 # Punto 1:
 ```diff
 -test: 
