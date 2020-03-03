@@ -1,4 +1,4 @@
-# Inicializacion:
+# Set up:
 ```diff
 -AWS access:
 
