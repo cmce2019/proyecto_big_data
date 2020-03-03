@@ -18,6 +18,8 @@ unzip uk-housing-prices-paid.zip
 
 hdfs dfs -put price_paid_records.csv /input
 
+-git set up
+
 git clone https://github.com/cmce2019/proyecto_big_data
 
 git config --global user.email "carlosm.cordoba1@correo.usa.edu.co"
