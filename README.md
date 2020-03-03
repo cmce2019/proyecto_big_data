@@ -18,13 +18,13 @@ git clone https://github.com/cmce2019/proyecto_big_data
 
 git config --global user.email "carlosm.cordoba1@correo.usa.edu.co"
 
-git config --global user.name "Carlos Mama Huevo"
+git config --global user.name "cmce2019"
 
 # Punto 1:
 ```diff
 -test: 
 ```
-![#f03c15](https://placehold.it/15/f03c15/000000?text="asdaasd")
+![#f03c15]("asdaasd")
 head -n 800000 price_paid_records.csv | python proyecto_big_data/punto_1/mapper.py | sort | python proyecto_big_data/punto_1/reducer.py 
 
 ```diff
