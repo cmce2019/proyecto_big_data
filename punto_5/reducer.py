@@ -22,7 +22,7 @@ for linenum, line in enumerate(data):
               else:
 		    aux_arr=months_count[:]
 		    aux_arr.sort(reverse=True)
-                    print(last_year+" "+pos(aux_arr[0],months_count))
+                    print(last_year+" "+str(pos(aux_arr[0],months_count)))
                     last_year=arr[0]
 		    init(months_count)
 aux_arr=months_count[:]
