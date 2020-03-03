@@ -2,7 +2,8 @@
 ```diff
 -AWS access:
 ssh -i "clave.pem" hadoop@ec2-184-72-104-249.compute-1.amazonaws.com
--Instance set up
+-Instance set up:
+
 sudo yum update
 
 sudo yum install git
@@ -11,14 +12,15 @@ sudo yum install nano
 
 sudo yum install unzip
 
--data-set download and input set up
+-data-set download and input set up:
+
 wget https://bigdata20192.s3.amazonaws.com/uk-housing-prices-paid.zip
 
 unzip uk-housing-prices-paid.zip
 
 hdfs dfs -put price_paid_records.csv /input
 
--git set up
+-git set up:
 
 git clone https://github.com/cmce2019/proyecto_big_data
 
