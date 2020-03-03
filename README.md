@@ -20,6 +20,8 @@ wget https://bigdata20192.s3.amazonaws.com/uk-housing-prices-paid.zip
 
 unzip uk-housing-prices-paid.zip
 
+hdfs dfs -mkdir /input
+
 hdfs dfs -put price_paid_records.csv /input
 
 -git set up:
