@@ -33,6 +33,7 @@ git config --global user.name "cmce2019"
 # Punto 1:
 ```diff
 -test: 
+
 head -n 800000 price_paid_records.csv | python proyecto_big_data/punto_1/mapper.py | sort | python proyecto_big_data/punto_1/reducer.py 
 ```
 
@@ -44,6 +45,7 @@ hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big
 # Punto 2:
 ```diff
 -test: 
+
 head -n 700 price_paid_records.csv | python proyecto_big_data/punto_2/mapper.py | sort | python proyecto_big_data/punto_2/reducer.py
 ```
 ```diff
@@ -59,6 +61,7 @@ head -n 700 price_paid_records.csv | python proyecto_big_data/punto_3/mapper.py 
 ```
 ```diff
 -Hadoop test: 
+
 hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big_data/punto_3/mapper.py,/home/hadoop/proyecto_big_data/punto_3/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /input -output /output_3 
 ```
 # Punto 4:
@@ -70,6 +73,7 @@ head -n 10000 price_paid_records.csv | python proyecto_big_data/punto_4/mapper.p
 ```
 ```diff
 -Hadoop test: 
+
 hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big_data/punto_4/mapper.py,/home/hadoop/proyecto_big_data/punto_4/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /input -output /output_4
 ```
 # Punto 5:
@@ -85,6 +89,7 @@ head -n 100 price_paid_records.csv | python proyecto_big_data/punto_5/mapper.py 
 ``` 
 ```diff
 -Hadoop test: 
+
 hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big_data/punto_5/mapper.py,/home/hadoop/proyecto_big_data/punto_5/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /input -output /output_5
 ```
 # Punto 6:
