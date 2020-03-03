@@ -24,6 +24,7 @@ git config --global user.name "Carlos Mama Huevo"
 ```diff
 -test: 
 ```
+![#f03c15](https://placehold.it/15/f03c15/000000?text="asdaasd")
 head -n 800000 price_paid_records.csv | python proyecto_big_data/punto_1/mapper.py | sort | python proyecto_big_data/punto_1/reducer.py 
 
 ```diff
