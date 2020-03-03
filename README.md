@@ -1,7 +1,9 @@
 # Inicializacion:
 ```diff
 -AWS access:
+
 ssh -i "clave.pem" hadoop@ec2-184-72-104-249.compute-1.amazonaws.com
+
 -Instance set up:
 
 sudo yum update
