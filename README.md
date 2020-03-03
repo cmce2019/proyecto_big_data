@@ -2,20 +2,23 @@
 
 ssh -i "clave.pem" hadoop@ec2-184-72-104-249.compute-1.amazonaws.com
 
-sudo apt-get update
+sudo yum update
 
-sudo apt-get install git
+sudo yum install git
 
-sudo apt-get install nano
+sudo yum install nano
 
-sudo apt-get install unzip
+sudo yum install unzip
 
 wget https://bigdata20192.s3.amazonaws.com/uk-housing-prices-paid.zip
 
 unzip wget
 
 git clone https://github.com/cmce2019/proyecto_big_data
+
 git config --global user.email "carlosm.cordoba1@correo.usa.edu.co"
+
+git config --global user.name "Carlos Mama Huevo"
 
 # Punto 1:
 head -n 800000 price_paid_records.csv | python proyecto_big_data/punto_1/mapper.py | sort | python proyecto_big_data/punto_1/reducer.py 
