@@ -55,7 +55,7 @@ hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big
 ```diff
 -test: 
  
-Esta en 1995 por cuestión de pruebas
++Esta en 1995 por cuestión de pruebas
 head -n 10000 price_paid_records.csv | python proyecto_big_data/punto_4/mapper.py | sort -V 
 ```
 ```diff
