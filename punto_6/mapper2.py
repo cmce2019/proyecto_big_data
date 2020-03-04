@@ -5,6 +5,6 @@ for line in sys.stdin:
 	if(len(words)>7):
 		if( "Town/City"!=words[6] and not(str(words[7]) in a)):	
 			a.append(words[7])
-			print(words[6]+"\t1")
+			print(words[7]+"\t1")
 print(len(a))
 	
