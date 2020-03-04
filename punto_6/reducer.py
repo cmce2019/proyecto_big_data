@@ -1,17 +1,14 @@
 import sys
 data = sys.stdin.readlines()
-size= len(data)
-count=0
+districts = {}
 for linenum, line in enumerate(data):
         arr=line.replace("\n","").split("\t")
         if linenum == 0:
-              count=1
-              anterior=arr[0]
+              districts[arr[0]]=int(arr[1])
         else:
-              if(anterior==arr[0]):
-                    count=count+1
+              if(arr[0] in districts):
+                    districts[arr[0]]=int(arr[1])+districts[arr[0]]
               else:
-                    print(str(count)+"\t1")
-                    anterior=arr[0]
-                    count=1
-print(str(count)+"\t1")
+                    districts[arr[0]]=int(arr[1])
+for key in diccionario:
+      print (str(diccionario[key])+"\t1")
