@@ -94,30 +94,6 @@ head -n 100 price_paid_records.csv | python proyecto_big_data/punto_5/mapper.py 
 
 hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big_data/punto_5/mapper.py,/home/hadoop/proyecto_big_data/punto_5/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /input -output /output_5
 
--Output:
-1997 7
-2000 6
-2003 10
-2006 6
-2009 12
-2012 8
-2015 7
-1995 6
-1998 7
-2001 8
-2004 7
-2007 8
-2010 7
-2013 11
-2016 3
-1996 11
-1999 7
-2002 5
-2005 12
-2008 5
-2011 8
-2014 8
-2017 3
 
 ```
 # 6:
