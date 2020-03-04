@@ -105,4 +105,8 @@ head -n 100 price_paid_records.csv | python proyecto_big_data/punto_6/mapper.py 
 ```
 ```diff
 -Hadoop test: 
+hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big_data/punto_6/mapper.py,/home/hadoop/proyecto_big_data/punto_6/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /input -output /input_p2
+
+hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files /home/hadoop/proyecto_big_data/punto_6/mapper.py,/home/hadoop/proyecto_big_data/punto_6/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /input_p2/part* -output /input_6
+
 ```
