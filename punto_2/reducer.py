@@ -12,8 +12,10 @@ for linenum, line in enumerate(data):
 		    size=size+1
                     count=count+int(arr[1])
               else:
-                    print(anterior+" "+str(count)+"/"+str(size))
+    		    division=float(float(count)/float(size))
+                    print(anterior+" "+str(division))
 	            size=1
                     anterior=arr[0]
                     count=int(arr[1])
-print(anterior+" "+str(count)+"/"+str(size))
+division=float(float(count)/float(size))
+print(anterior+" "+str(division))
