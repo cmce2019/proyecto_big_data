@@ -1,17 +1,14 @@
 import sys
 data = sys.stdin.readlines()
-
-size= len(data)
+districts = {}
 for linenum, line in enumerate(data):
         arr=line.replace("\n","").split("\t")
-        if linenum == 0:
-              count=int(arr[1])
-              anterior=arr[0]
+        if linenum == 0 and arr[0]!='':  
+              districts[arr[0]]=int(arr[1])
         else:
-              if(anterior==arr[0]):
-                    count=count+int(arr[1])
-              else:
-                    print(str(count)+" "+anterior)
-                    anterior=arr[0]
-                    count=int(arr[1])
-print(str(count)+" "+anterior)
+              if(arr[0] in districts and arr[0]!=''):
+                    districts[arr[0]]=int(arr[1])+districts[arr[0]]
+              elif arr[0]!='':
+                    districts[arr[0]]=int(arr[1])
+for key in districts:
+      print (str(districts[key])+"\t"+str(key))

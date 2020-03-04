@@ -10,5 +10,5 @@ for linenum, line in enumerate(data):
                     districts[arr[0]]=int(arr[1])+districts[arr[0]]
               else:
                     districts[arr[0]]=int(arr[1])
-for key in diccionario:
-      print (str(diccionario[key])+"\t1")
+for key in districts:
+      print (str(districts[key])+"\t1")
