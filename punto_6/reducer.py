@@ -10,7 +10,7 @@ for linenum, line in enumerate(data):
               if(anterior==arr[0]):
                     count=count+1
               else:
-                    print(str(count)+"\t1")
+                    print(str(count)+"\t1"+anterior)
                     anterior=arr[0]
                     count=1
-print(str(count)+"\t1")
+print(str(count)+"\t1"+anterior)
